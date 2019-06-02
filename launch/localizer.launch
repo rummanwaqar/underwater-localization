@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="au_localization"
+        type="localization_node"
+        name="localization_node"
+        clear_params="true"
+        output="screen">
+        <rosparam file="$(find au_localization)/params/ukf.yaml" />
+    </node>
+</launch>
